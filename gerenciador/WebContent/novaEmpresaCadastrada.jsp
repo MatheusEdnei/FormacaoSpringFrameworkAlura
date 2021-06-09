@@ -10,10 +10,10 @@
 	
 	<% 
 		// Scriplet
-		String nomeEmpresa = "Alura";
+		String nomeEmpresa = (String) request.getAttribute("nomeEmpresa");
 		System.out.println(nomeEmpresa);
 	%>
 	
-	Empresa " + <%= nomeEmpresa %> + " cadastrada com sucesso!
+	Empresa <%= nomeEmpresa %> cadastrada com sucesso!
 </body>
 </html>
